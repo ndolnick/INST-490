@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>UMD DIT Website</title>
+    <title>UMD DIT - General Calendar</title>
     <style>
         body { font-family: Arial, sans-serif; background:#e6e6e6; }
-        .navbar { overflow: hidden; background-color:  #e21833; text-align: center; }
+        .navbar { overflow: hidden; background-color: #e21833; text-align: center; }
         .navbar a {
-            display: inline-block; /* Changed from float to inline-block for centering */
+            display: inline-block;
             color: #ffd200;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
-            background-color:  #e21833;
+            background-color: #e21833;
         }
         .navbar a:hover { background-color: #000; color: #e6e6e6; }
-        .main-content { padding: 16px; color: #000; }
+        
+        .calendar-container {
+            width: 100%; 
+            margin: 20px auto; 
+            background-color: #fff; 
+            padding: 15px; 
+        }
+        
+        .calendar-iframe {
+            width: 100%; 
+            height: 600px; 
+            border: none; 
+        }
     </style>
 </head>
 <body>
@@ -24,6 +36,14 @@
     <a href="Genral_Calendar.html">General Calendar</a>
     <a href="Documentation.html">Documentation</a>
     <a href="Schedule-Maintenance.html">Schedule Maintenance</a>
+    <a href="Upload.html">Upload Page</a>
 </div>
+
+<!-- Calendar Embed Code -->
+<div class="calendar-container">
+
+    <iframe src= "https://calendar.google.com/calendar/embed?src=9fd0a1a962704adf89bfd2d9b011d8e56e3d75e717d804e7d377ba191108d709%40group.calendar.google.com&ctz=your_timezone"class="calendar-iframe"></iframe>
+</div>
+
 </body>
 </html>
