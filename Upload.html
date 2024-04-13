@@ -3,7 +3,7 @@
 <head>
     <title>UMD DIT - Upload</title>
     <style>
-         body { font-family: Arial, sans-serif; background:#e6e6e6; }
+        body { font-family: Arial, sans-serif; background:#e6e6e6; }
         .navbar { overflow: hidden; background-color:  #e21833; text-align: center; }
         .navbar a {
             display: inline-block; 
@@ -15,16 +15,43 @@
         }
         .navbar a:hover { background-color: #000; color: #e6e6e6; }
         .main-content { padding: 16px; color: #000; }
+        .upload-instructions { margin-bottom: 20px; }
+        .upload-button {
+            padding: 10px 20px;
+            background-color:  #e21833; 
+            border: none;
+            color: #ffd200;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .upload-link {
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
 
 <div class="navbar">
     <a href="Home_Page.html">Home Page</a>
-    <a href="Genral_Calendar.html">General Calendar</a>
+    <a href="General_Calendar.html">General Calendar</a>
     <a href="Documentation.html">Documentation</a>
     <a href="Schedule-Maintenance.html">Schedule Maintenance</a>
     <a href="Upload.html">Upload Page</a>
 </div>
+
+<div class="main-content">
+    <div class="upload-instructions">
+        <p>To upload documents related to completed tests or maintenance requests, please click the button below. You will be redirected to our Google Drive folder. There, simply click on the "+ New" button at the top of the screen to upload your file.</p>
+    </div>
+    <a href="https://drive.google.com/drive/folders/1c97Zv731UIWRc9r8Ul5LJz8KRsQfw5Z8x2598j5Ze3Nlkg24p8AFw-m3TjDfxOHA8s6Ia6nu" target="_blank" class="upload-link">
+        <button class="upload-button">Upload to Google Drive</button>
+    </a>
+</div>
+
 </body>
 </html>
